@@ -50,7 +50,7 @@ You all have access to:
 
 ---
 
-## 3. Part 1 — Performance Exploration (Required for Full Credit)
+## 3. Part 1 — Performance Exploration
 
 ### Goal
 
@@ -78,11 +78,12 @@ Inside stats.txt, you can find performance statistics for each configuration.
 This file contains hundreds of statistics, below are few key metrics:
 
 | Metric | Example Field | Description |
-|---------|----------------|-------------|
+|------------|----------------|-------------|
 | **`simSeconds`** | `simSeconds` | Total simulated execution time in seconds. Lower is better. Represents overall runtime for the workload. |
 | **`CPI`** | `board.processor.cores.core.cpi` | *Cycles Per Instruction* — main measure of performance. Lower CPI indicates faster execution per instruction. |
 | **`IPC`** | `board.processor.cores.core.ipc` | *Instructions Per Cycle* — inverse of CPI. Higher IPC means better throughput. |
 | **`Miss Rate`** | `board.cache_hierarchy.l1dcaches.demandMissRate::total` | Fraction of memory accesses that miss in cache. Helps explain *why* performance changes (temporal/spatial locality). |
+|**`Avg Miss Latency`** | `board.cache_hierarchy.l1dcaches.demandAvgMissLatency::total` | Average latency per miss (in ticks).|
 
 ---
 
@@ -113,7 +114,7 @@ You must:
   - How does the presence of L2 affect performance?
 ---
 
-## 4. Part 2 — Bonus: Cost-Aware Cache Design
+## 4. Part 2 — Cost-Aware Cache Design
 
 ### Goal
 Find the lowest-cost configuration that satisfies the performance constraint CPI < 2.5.  
@@ -159,5 +160,5 @@ You must:
 - Identify your top three (3) configurations that meet CPI < 2.5 while minimizing total cost.  
 - Provide a one-paragraph justification explaining:
   - Why your chosen configuration is cost-optimal under the CPI constraint? 
-  - How locality (temporal / spatial) or AMAT reasoning supports your choice?
+  - How locality (temporal / spatial) or AMAT reasoning supports your choice? (For this assignment we assume cache hit time = 0)
 
