@@ -125,10 +125,10 @@ Use the below simple cost model to account for hardware complexity and area cost
 
 | Cache Level | Fixed Overhead | Cost per KiB | Notes |
 |--------------|----------------|---------------|--------|
-| **L1 (per side)** | 50 units | 4 units / KiB | Very fast but expensive; placed close to the core |
+| **L1 (per side)** | 50 units | 6 units / KiB | Very fast but expensive; placed close to the core |
 | **L2 (shared)** | 128 units | 1 unit / KiB | Slower but cheaper; shared among cores |
 
-**Total Cost = (L1I + L1D) × 4 + (2 × 50) + (L2 × 1 + 128)**
+**Total Cost = (L1I + L1D) × 6 + (2 × 50) + (L2 × 1 + 128)**
 
 > *Interpretation:*  
 > L1 caches use high-speed multi-ported SRAM, making them roughly 4× as costly per KiB as L2.  
@@ -141,14 +141,14 @@ Use the below simple cost model to account for hardware complexity and area cost
 **Example 1 — L1-only design**
 - L1I = 64 KiB, L1D = 64 KiB, L2 = 0 KiB  
 - Fixed = (2 × 50) = 100  
-- Variable = (64 + 64) × 4 = 512  
+- Variable = (64 + 64) × 6 = 768 
 - **Total Cost = 612 units**
 
 **Example 2 — Two-level design**
 - L1I = 64 KiB, L1D = 64 KiB, L2 = 256 KiB  
-- L1 cost = 612 units  
+- L1 cost = 768 units  
 - L2 fixed + variable = 128 + (256 × 1) = 384  
-- **Total Cost = 996 units**
+- **Total Cost = 1,152 units**
 
 ---
 
