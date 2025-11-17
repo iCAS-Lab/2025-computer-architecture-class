@@ -131,7 +131,7 @@ Use the below simple cost model to account for hardware complexity and area cost
 **Total Cost = (L1I + L1D) × 6 + (2 × 50) + (L2 × 1 + 128)**
 
 > *Interpretation:*  
-> L1 caches use high-speed multi-ported SRAM, making them roughly 4× as costly per KiB as L2.  
+> L1 caches use high-speed multi-ported SRAM, making them roughly 6× as costly per KiB as L2.  
 > Each cache level also has a fixed overhead that represents control logic, tags, and wiring.
 
 ---
