@@ -46,7 +46,7 @@ You all have access to:
 
 - The Docker container with gem5 preinstalled.  
 - A provided workload binary `/home/gem5/blocked_mult` already included inside the container.  
-- A sample run script that demonstrates how to execute gem5 in SE (System Emulation) mode — [gem5_SE_run_script.sh](link-to-your-github-script).
+- A sample run script that demonstrates how to execute gem5 in SE (System Emulation) mode — [gem5_SE_run_script](https://github.com/iCAS-Lab/2025-computer-architecture-class/blob/main/Project2/x86_se.py).
 
 ---
 
