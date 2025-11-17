@@ -13,8 +13,7 @@ By running and analyzing simulations, you will discover the “sweet spot” —
 
 ## 0. Background: Memory Hierarchy in Modern Processors
 
-Modern processors use multi-level cache hierarchies (L1, L2, L3) to bridge the speed gap between fast CPUs and slower DRAM memory.  
-However, larger caches are slower and more expensive per byte — so architects must balance speed, cost, and energy.
+Modern processors use multi-level cache hierarchies (L1, L2, L3) to bridge the speed gap between fast CPUs and slower DRAM memory. However, larger caches are slower and more expensive per byte — so architects must balance speed, cost, and energy.
 
 Key principles behind cache design:
 
@@ -57,8 +56,7 @@ You all have access to:
 Find the top 3 performing cache hierarchies (lowest `simSeconds` / `CPI`) within a 512 MiB total cache budget.  
 Whatever configuration you use, **do not exceed** a combined total of **512 MiB** cache capacity.  
 
-Start by running the no-cache configuration as your baseline.  
-This will help you compare how adding cache improves performance.
+Start by running the no-cache configuration as your baseline. This will help you compare how adding cache improves performance.
 
 ---
 
@@ -117,8 +115,9 @@ You must:
 ## 4. Part 2 — Cost-Aware Cache Design
 
 ### Goal
-Find the lowest-cost configuration that satisfies the performance constraint CPI < 2.5.  
-This part builds on the results from Part 1, using a simple cost model to account for hardware complexity and area cost.
+Extend your analysis beyond performance to include cost. Find the configuration that achieves the best balance of performance  
+(CPI < 2.5) and lowest total cost, and explain your result using locality principles and Average Memory Access Time (AMAT) reasoning.
+Use the below simple cost model to account for hardware complexity and area cost.
 
 ---
 
