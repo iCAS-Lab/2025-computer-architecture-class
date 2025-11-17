@@ -146,9 +146,9 @@ Use the below simple cost model to account for hardware complexity and area cost
 
 **Example 2 — Two-level design**
 - L1I = 64 KiB, L1D = 64 KiB, L2 = 256 KiB  
-- L1 cost = 768 units  
+- L1 cost = 868 units  
 - L2 fixed + variable = 128 + (256 × 1) = 384  
-- **Total Cost = 1,152 units**
+- **Total Cost = 1,252 units**
 
 ---
 
