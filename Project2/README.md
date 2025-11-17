@@ -7,7 +7,7 @@
 
 In this assignment, we will explore memory hierarchy design using the [gem5 simulator](https://www.gem5.org/). You will learn how cache size, hierarchy depth, and organization influence CPU performance (CPI, execution time) and how cost constraints drive real-world design trade-offs.
 
-By running and analyzing simulations, you will discover the “sweet spot” — the optimal balance between cache capacity, latency, and overall system performance. In the bonus section, you will integrate cost modeling to identify the most efficient design under practical constraints.  
+By running and analyzing simulations, you will discover the “sweet spot” — the optimal balance between cache capacity, latency, and overall system performance. In the second section, you will integrate cost modeling to identify the most efficient design under practical constraints.  
 
 ---
 
@@ -36,7 +36,7 @@ You will simulate and analyze multiple cache configurations to:
 
 1. Measure the performance impact of different cache hierarchies (L1-only vs. L1+L2).  
 2. Identify the performance sweet spot — the configuration that yields the best execution time or CPI improvement.  
-3. (Bonus) Introduce cost modeling to find the best design that meets a CPI target (CPI < 2.5) while minimizing total cost.
+3. Introduce cost modeling to find the best design that meets a CPI target (CPI < 2.5) while minimizing total cost.
 
 ---
 
