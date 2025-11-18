@@ -53,8 +53,8 @@ You all have access to:
 
 ### Goal
 
-Find the top 3 performing cache hierarchies (lowest `simSeconds` / `CPI`) within a 512 MiB total cache budget.  
-Whatever configuration you use, **do not exceed** a combined total of **512 MiB** cache capacity.  
+Find the top 3 performing cache hierarchies (lowest `simSeconds` / `CPI`) within a 512 KiB total cache budget.  
+Whatever configuration you use, **do not exceed** a combined total of **512 KiB** cache capacity.  
 
 Start by running the no-cache configuration as your baseline. This will help you compare how adding cache improves performance.
 
